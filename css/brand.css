@@ -1,0 +1,163 @@
+﻿#page .title > img {
+    width: 48%;
+}
+
+/* #region 上半部區塊 */
+#brand .top-section .row,
+#brand .bottom-section .row {
+    position: relative;
+    z-index: 3;
+}
+
+.top-section h2.white {
+    position: relative;
+    margin: 3vh 0 -3vh 0;
+    color: #fff;
+}
+
+    .top-section h2.white:before {
+        content: '';
+        display: inline-block;
+        width: 6%;
+        height: 80px;
+        vertical-align: top;
+        background: url('../img/brand/3.png') no-repeat center top;
+        background-size: contain;
+    }
+
+/* #region 3大創新功能 */
+.advantage {
+    display: flex;
+    width: 95%;
+    margin-bottom: 5vh;
+    color: #fff;
+    font-size: 14px;
+    background: #304bb6;
+    border: 1px solid #5475d2;
+    box-shadow: 0 0 20px rgba(14, 28, 83, 0.4);
+}
+
+    .advantage .aside {
+        display: flex;
+        align-items: center;
+        width: 10%;
+        background: #405ccd;
+    }
+
+        .advantage .aside p {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+
+    .advantage .content {
+        display: flex;
+        width: 90%;
+        padding: 5% 0;
+    }
+
+        .advantage .content > div {
+            width: 33.33%;
+            padding: 0 5.5%;
+        }
+
+            .advantage .content > div > p:nth-of-type(1) {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+                .advantage .content > div > p:nth-of-type(1):after {
+                    content: '';
+                    display: block;
+                    height: 10px;
+                    margin: 10px 0;
+                    background: url('../img/brand/line.png') no-repeat left center;
+                    background-size: cover;
+                }
+/* #endregion 3大創新功能 */
+
+.top-section .palent {
+    position: absolute;
+    z-index: 3;
+    top: 24%;
+    right: 8%;
+    width: 23%;
+}
+/* #endregion 上半部區塊 */
+
+/* #region 下半部區塊 */
+#brand .bottom-section {
+    padding: 8% 0 20%;
+    font-size: 14px;
+    background: #161e3e url('../img/brand/bg.jpg') no-repeat right bottom;
+}
+
+    #brand .bottom-section p {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #brand .bottom-section p:nth-of-type(1) {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+        #brand .bottom-section p:nth-of-type(1):after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 8px;
+            margin: 5% 0 15%;
+            background-color: #5475d2;
+        }
+
+    #brand .bottom-section p > span {
+        display: block;
+    }
+/* #endregion 下半部區塊 */
+
+@media (max-width: 1200px) {
+    #page .title > img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .advantage .content {
+        flex-direction: column;
+    }
+
+        .advantage .content > div {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+    .top-section .palent {
+        top: 29%;
+        width: 30%;
+    }
+
+    #brand .bottom-section .brand-text > div {
+        margin-bottom: 10%;
+        padding: 0 5%;
+    }
+
+    #brand .bottom-section p:nth-of-type(1):after {
+        margin: 2% 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+    #page .title > img {
+        width: 70%;
+    }
+
+    .top-section .palent {
+        width: 50%;
+    }
+}

@@ -1,0 +1,239 @@
+﻿#page .title > img {
+    width: 40%;
+}
+
+/* #region 上半部區塊 */
+#service .top-section .row {
+    position: relative;
+    z-index: 3;
+}
+
+.top-section .service-item {
+    margin-bottom: 6%;
+}
+
+    .top-section .service-item p.text {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+
+.top-section .icon {
+    text-align: center;
+    background: #405ccd;
+}
+
+    .top-section .icon img {
+        width: 100%;
+    }
+
+    .top-section .icon > span {
+        display: block;
+        margin: -5% 0 5%;
+        color: #fff;
+        font-size: 1rem;
+    }
+/* #endregion 上半部區塊 */
+
+/* #region 下半部區塊 */
+#service .bottom-section {
+    position: relative;
+    background: #161e3e;
+    overflow: hidden;
+}
+
+    #service .bottom-section .row {
+        position: relative;
+        z-index: 4;
+    }
+
+/* #region 方案 */
+#service h2.program-title {
+    position: relative;
+    color: #fff;
+    margin: 8% 0 15%;
+}
+
+    #service h2.program-title:after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 5px;
+        width: 40px;
+        height: 8px;
+        background: #5475d2;
+    }
+
+#service .program-container {
+    margin-bottom: 5vh;
+}
+
+    #service .program-container > img {
+        position: relative;
+        margin-bottom: -5%;
+        z-index: 1;
+    }
+
+    #service .program-container.bottom {
+        margin-bottom: 20%;
+        padding-right: 15%;
+        text-align: right;
+    }
+
+        #service .program-container.bottom > img {
+            margin-top: -3.7%;
+        }
+
+.program {
+    display: flex;
+    width: 70%;
+    min-height: 30vh;
+    align-items: stretch;
+    color: #fff;
+    font-size: 14px;
+    background: #304bb6;
+    border: 1px solid #5475d2;
+    box-shadow: 0 0 20px rgba(14, 28, 83, 0.4);
+}
+
+    .program.one {
+        width: 85%;
+    }
+
+    .program > .aside {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        background: #405ccd;
+    }
+
+        .program > .aside > p {
+            display: flex;
+            justify-content: center;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+
+    .program > .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 5%;
+        text-align: left;
+    }
+
+        .program > .content p {
+            font-size: 0.9rem;
+        }
+
+            .program > .content p:nth-of-type(1) {
+                margin-bottom: 15px;
+                color: #00ffa2;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            .program > .content p > span {
+                display: block;
+            }
+
+    .program.big {
+        width: 100%;
+    }
+
+        .program.big > .aside {
+            width: 10%;
+        }
+
+        .program.big > .content {
+            width: 90%;
+            padding: 5% 10%;
+        }
+/* #endregion 方案 */
+
+#service .chat-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 20%;
+    padding: 3% 0;
+    color: #1762e6;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    background: linear-gradient(to right, #00ffa2, #64d0ed);
+    border-radius: 40px;
+}
+
+    #service .chat-button > span.en {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-top: 3%;
+    }
+
+    #service .chat-button:hover {
+        background: linear-gradient(to right, #64d0ed, #00ffa2);
+    }
+/* #endregion 下半部區塊 */
+
+/* #region 太空人 */
+#service .astronaut {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    width: 45%;
+}
+/* #endregion 太空人 */
+
+@media (max-width: 1200px) {
+    #page .title > img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .program.big > div.content {
+        padding: 5% 5%;
+    }
+
+    #service .chat-button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    #page .title > img {
+        width: 70%;
+    }
+
+    #service .program-container.bottom {
+        padding: 0;
+    }
+
+        #service .program-container.bottom > img {
+            width: 18%;
+            margin-top: -2%;
+        }
+
+    .program {
+        min-height: 25vh;
+    }
+
+        .program,
+        .program.one {
+            width: 100%;
+        }
+
+    #service .chat-button {
+        width: 50%;
+    }
+}

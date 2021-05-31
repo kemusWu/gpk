@@ -1,0 +1,135 @@
+﻿#page .title > img {
+    width: 35%;
+}
+
+#contact {
+    position: relative;
+    min-height: 100vh;
+    background: url('../img/contact/bg.jpg') no-repeat right top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+    #contact .row {
+        position: relative;
+        z-index: 3;
+    }
+
+/* #region 聯絡我們文字區塊 */
+.contact-text {
+    margin-top: 10%;
+}
+
+    .contact-text > p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+        .contact-text > p:first-child,
+        .contact-text > p:nth-child(2) {
+            letter-spacing: 2px;
+        }
+
+        .contact-text > p.mt {
+            margin-top: 20%;
+        }
+
+        .contact-text > p.green {
+            font-size: 0.9rem;
+        }
+
+    .contact-text > .chat-button {
+        display: block;
+        width: 55%;
+        margin: 35px 0;
+        padding: 3% 0;
+        color: #1762e6;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1;
+        background: linear-gradient(to right, #00ffa2, #64d0ed);
+        border-radius: 42px;
+    }
+
+        .contact-text > .chat-button > span.en {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+
+        .contact-text > .chat-button:hover {
+            background: linear-gradient(to right, #64d0ed, #00ffa2);
+        }
+/* #endregion 聯絡我們文字區塊 */
+
+/* #region 服務項目 */
+.service-item {
+    margin-top: 80px;
+    text-align: right;
+}
+
+    .service-item > p {
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+        .service-item > p:nth-of-type(1) {
+            margin-bottom: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+/* #endregion 服務項目 */
+
+#contact #palent-parallax,
+#contact #palent-parallax .layer {
+    position: absolute;
+    bottom: 18%;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    #page .title > img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .advantage .content {
+        flex-direction: column;
+    }
+
+        .advantage .content > div {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+    .top-section .palent {
+        top: 27%;
+        width: 30%;
+    }
+
+    #brand .bottom-section .brand-text > div {
+        margin-bottom: 10%;
+        padding: 0 5%;
+    }
+
+    #brand .bottom-section p:nth-of-type(1):after {
+        margin: 2% 0 5%;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+    #page .title > img {
+        width: 65%;
+    }
+
+    .top-section .palent {
+        width: 50%;
+    }
+}

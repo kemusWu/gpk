@@ -1,0 +1,214 @@
+﻿#page .title > img {
+    width: 40%;
+}
+
+/* #region 上半部區塊 */
+#about .top-section {
+    background-color: #304bb6;
+}
+
+    #about .top-section .row {
+        position: relative;
+        z-index: 4;
+    }
+
+        #about .top-section .row + .row {
+            margin-bottom: 6%;
+        }
+
+.top-section p {
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+
+.top-section .text {
+    padding-top: 15px;
+    border-top: 8px solid #5475d2;
+}
+
+    .top-section .text p {
+        font-size: 1.1rem;
+    }
+
+        .top-section .text p + p {
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+/* #region 牌照 */
+.top-section .license {
+    display: inline-block;
+    width: 72%;
+    height: 100%;
+    font-size: 0;
+    background: #304bb6;
+    border: 1px solid #5475d2;
+    box-shadow: 0 0 20px rgba(14, 28, 83, 0.4);
+}
+
+    .top-section .license .license-img {
+        display: inline-flex;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .top-section .license .license-img > img {
+            width: 80%;
+        }
+
+    .top-section .license .license-text {
+        display: inline-flex;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        vertical-align: top;
+        background: #405ccd;
+    }
+
+        .top-section .license .license-text p {
+            font-size: 14px;
+            text-align: center;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+/* #endregion 牌照 */
+/* #endregion 上半部區塊 */
+
+/* #region 下半部區塊 */
+#about .bottom-section {
+    position: relative;
+    font-size: 0;
+    z-index: 3;
+}
+
+.bottom-section h2.game {
+    margin: 8% 0 1%;
+}
+
+.bottom-section .game-container {
+    position: relative;
+    padding-bottom: 5%;
+    z-index: 4;
+    background: #151e3d;
+}
+
+    .bottom-section .game-container:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(to right,#00ffa2,#64d0ed);
+    }
+
+    .bottom-section .game-container img {
+        width: 12.5%
+    }
+
+.bottom-section .dot {
+    position: absolute;
+    left: 17%;
+    bottom: 0;
+    z-index: 4;
+    width: 18%;
+}
+
+    .bottom-section .dot.top {
+        top: -7%;
+        left: auto;
+        right: 1%;
+    }
+
+    .bottom-section .dot > img {
+        width: 100%;
+    }
+/* #endregion 下半部區塊 */
+
+/* #region 星球 */
+#about .palent01 {
+    position: absolute;
+    top: -5%;
+    left: 12%;
+    z-index: 3;
+}
+
+    #about .palent01 > img {
+        width: 85%;
+    }
+
+#about .palent02 {
+    position: absolute;
+    top: -20%;
+    right: 0;
+    z-index: 3;
+    overflow: hidden;
+    text-align: right;
+}
+
+    #about .palent02 > img {
+        width: 80%;
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+/* #endregion 星球 */
+
+@media (max-width: 1200px) {
+    #page .title > img {
+        width: 50%;
+    }
+
+    #about .palent01 > img,
+    #about .palent02 > img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    #about .palent01 > img,
+    #about .palent02 > img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #about .palent01 > img,
+    #about .palent02 > img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    #page .title > img {
+        width: 70%;
+    }
+
+    #about .palent01 {
+        left: -10px;
+    }
+
+        #about .palent01 > img {
+            width: 80%;
+        }
+
+    .bottom-section .dot {
+        left: 0;
+        width: 40%;
+    }
+
+        .bottom-section .dot.top {
+            left: auto;
+            right: 0;
+        }
+}
+
+/* en */
+@media (min-width: 1200px) {
+    body.en-us .text {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
