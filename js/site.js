@@ -35,10 +35,12 @@ $(function () {
     // page nav active
     var pageNav = $('#page-nav a');
     if(pageNav.length!==0) {
-        var currentPath = location.pathname;
+        var Path = location.pathname;
+        var currentPath = Path.split('/');
+        var currentPathNum = currentPath.length -1;
 
         pageNav.each(function () {
-            if ('/' + $(this).attr('href') == currentPath) {
+            if ($(this).attr('href') == currentPath[currentPathNum]) {
                 $(this).addClass('active');
             } else {
                 $(this).removeClass('active');
